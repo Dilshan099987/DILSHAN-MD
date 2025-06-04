@@ -72,11 +72,11 @@ async (conn, mek, m, { from, args, q, reply, react }) => {
 
         const { username, fullname, caption, likes, comments, followed, download } = data.data;
 
-        const captionText = `*AWAIS-MD IG DOWNLOADER🚀*` +
+        const captionText = `*DILSHAN-MD IG DOWNLOADER🚀*` +
                             `📸 *Instagram Post* 📸\n\n` +
                             `👤 *User:* ${fullname} (@${username})\n` +
                             `❤️ *Likes:* ${likes}\n💬 *Comments:* ${comments}\n👥 *Followers:* ${followed}\n` +
-                            `📝 *Caption:*\n${caption || "THE AWAIS-MD API."}`;
+                            `📝 *Caption:*\n${caption || "THE DILSHAN-MD API."}`;
 
         for (const media of download) {
             if (media.type === "image") {
@@ -129,7 +129,7 @@ async (conn, mek, m, { from, args, q, reply }) => {
         const caption = `🎵 *DILSHAN-MD TIKTOK VIDEO* 🎵\n\n` +
                         `👤 *USER:* ${author.nickname} (@${author.username})\n` +
                         `📖 *TITLE:* ${title}\n` +
-                        `👍 *LIKES:* ${like}\n💬 *COMMENTS:* ${comment}\n🔁 *SHARES:* ${share}\n\n *> ©Powerd By DILSHAN MD☀* ♥️`;
+                        `👍 *LIKES:* ${like}\n💬 *COMMENTS:* ${comment}\n🔁 *SHARES:* ${share}\n\n > ☀©POWERD BY DILSHAN MD`;
         
         await conn.sendMessage(from, {
             video: { url: videoUrl },
